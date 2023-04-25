@@ -1,0 +1,21 @@
+README
+
+Ce programme a été développé par FEKIH HASSEN Yassine dans le cadre d'un TP au sein de l'Université Paris-Est Créteil.
+
+Ce programme est une SIMPLE implémentation du chiffrement RSA.
+Il contient les fichiers suivants :
+
+1. rsa_functions.h : Déclarations de toutes les fonctions nécessaires pour le chiffrement et le déchiffrement RSA, ainsi que la création et la lecture des clés.
+
+2. rsa_functions.c : Implémentation des fonctions déclarées dans rsa_functions.h.
+
+3. alice.c : Programme principal pour Alice, qui lit la clé publique à partir d'un fichier, chiffre un fichier texte avec cette clé et écrit le résultat dans un fichier de sortie.
+
+4. bob.c : Programme principal pour Bob, qui génère une paire de clés RSA, les écrit dans des fichiers, puis lit un fichier chiffré et le déchiffre à l'aide de la clé privée.
+
+5. Makefile : Un fichier Makefile pour compiler et générer les exécutables alice et bob.
+
+Pour compiler les exécutables : exécutez simplement la commande 'make' dans le terminal. Cela générera les exécutables 'alice' et 'bob'.
+Vous avez juste à taper 'alice' ou 'bob', si ça ne fonctionne pas tapez './alice' ou './bob'.
+
+Pour nettoyer les fichiers objets générés, exécutez 'make clean'.
